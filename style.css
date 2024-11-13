@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Estilo para o corpo */
+body {
+    background-color: #9deffa; /* Azul claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Sour Gummy', sans-serif;
+}
+
+/* Container principal */
+.content {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #8eb8f3;
+}
+
+/* Estilo para fundo escuro (modo dark) */
+body.dark {
+    background: #313131;
+    color: white;
+}
+
+body.dark .content {
+    background-color: #424242;
+}
+
+/* Tamanhos de cabeçalhos e parágrafos */
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 20px;
+}
+
+input, label {
+    font-size: 20px;
+}
+
+/* Estilo para o botão redondo */
+.round-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.round-button .btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px; /* Ajuste no padding para garantir que o texto não seja cortado */
+    background-color: #742424;
+    color: rgb(255, 255, 255);
+    border-radius: 50px; /* Formato arredondado */
+    text-decoration: none;
+    font-family: 'Sour Gummy', sans-serif; /* Garantir a mesma fonte */
+    font-size: 16px; /* Tamanho da fonte ajustado */
+    transition: background-color 0.3s;
+    text-align: center; /* Centraliza o texto dentro do botão */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+}
+
+.round-button .btn:hover {
+    background-color: #8eb8f3;
+}
+
+/* Estilo para o campo de entrada */
+.input-field {
+    width: 100%; /* Ajusta a largura para ocupar 100% do container */
+    padding: 12px 15px; /* Aumenta o padding para garantir que o placeholder tenha espaço */
+    box-sizing: border-box; /* Inclui padding na largura total */
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 18px; /* Ajuste no tamanho da fonte para tornar o placeholder mais legível */
+    color: #333; /* Cor do texto para contraste */
+    text-align: center; /* Centraliza o texto do placeholder */
+}
+
+/* Ajusta o tamanho do placeholder */
+.input-field::placeholder {
+    font-size: 18px; /* Aumenta o tamanho do texto do placeholder */
+    color: #888; /* Altera a cor do placeholder para garantir contraste adequado */
+}
+
+/* Estilo para o vídeo de fundo */
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que o vídeo cubra a tela inteira */
+    z-index: -1; /* Coloca o vídeo atrás do conteúdo */
+    opacity: 0.7; /* Ajuste de opacidade para suavizar o vídeo de fundo */
+}
+
+/* Estilo adicional para a página de resultados */
+#resultado {
+    font-size: 22px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+#dica {
+    font-size: 20px;
+    color: #742424;
+    margin-top: 10px;
+}
+
+#resultado, #dica {
+    margin-top: 20px;
+}
+
+/* Estilo para as mensagens de erro */
+.error-message {
+    color: red;
+    font-size: 16px; /* Aumenta o tamanho da fonte */
+    text-align: center; /* Centraliza o texto da mensagem de erro */
+    margin-top: 10px; /* Ajusta o espaço entre o campo e a mensagem */
+    width: 100%; /* Garante que a mensagem ocupe toda a largura do campo */
+    display: block; /* Exibe a mensagem como um bloco */
+}
+
+/* Ajustes no container do formulário para garantir que as mensagens de erro se alinhem corretamente */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinha os campos e mensagens ao centro */
+}

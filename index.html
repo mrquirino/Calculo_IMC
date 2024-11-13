@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <video autoplay loop muted playsinline class="background-video">
+        <source src="vecteezy_red-strawberries-falling-against-a-blue-background_2158717.mp4" type="video/mp4">
+    </video>
+    <div class="content">
+        <h1><strong>IMC</strong></h1>
+        <h2>O que é o cálculo de IMC?</h2>
+        <p>O Índice de Massa Corporal (IMC) é um indicador utilizado para avaliar se uma pessoa está dentro do peso
+            ideal em relação à sua altura. O cálculo é feito dividindo o peso (em kg) pela altura ao quadrado (em
+            metros).</p>
+
+        <div class="container">
+            <form id="imcForm">
+                <label for="peso">Peso (kg):</label>
+                <input type="number" id="peso" class="input-field" placeholder="Digite seu peso" required>
+                <p id="peso-error" class="error-message"></p>
+
+                <br><br>
+
+                <label for="altura">Altura (m):</label>
+                <input type="number" id="altura" class="input-field" step="0.01" placeholder="Digite sua altura"
+                    required>
+                <p id="altura-error" class="error-message"></p>
+            </form>
+        </div>
+
+        <div class="round-button">
+            <button id="calcularBtn" class="btn">Calcule Agora</button>
+        </div>
+        <div id="loading" class="loading-message" style="display:none;">Calculando...</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
